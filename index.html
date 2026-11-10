@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Artisan Sourdough | Tradição Italiana em Vitória</title>
+<link rel="icon" type="image/png" href="favicon.png"> 
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        artisanal: {
+                            50: '#fcfbfa',
+                            100: '#f5f2ed',
+                            200: '#e8decb',
+                            300: '#d7c7a9',
+                            400: '#bfa77e',
+                            600: '#8c6d46',
+                            700: '#6e5334',
+                            800: '#543f27',
+                            900: '#382a1a',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f5f2ed;
+            color: #382a1a;
+        }
+        h1, h2, h3, .font-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+        }
+    </style>
+</head>
+<body class="bg-artisanal-100 text-artisanal-900 antialiased selection:bg-artisanal-300 selection:text-artisanal-900">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-[#f5f2ed]/95 backdrop-blur-md border-b border-artisanal-200 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo / Brand -->
+            <a href="#" class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-artisanal-800 flex items-center justify-center text-artisanal-100 font-serif font-bold text-lg shadow-md">
+                    L'A
+                </div>
+                <div>
+                    <span class="font-serif font-bold text-xl tracking-wide text-artisanal-900 block leading-none">L'Artisan Sourdough</span>
+                    <span class="text-xs uppercase tracking-widest text-artisanal-600 font-medium">Vitória • Tradição Italiana</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm">
+                <a href="#sobre" class="hover:text-artisanal-600 transition-colors">A História</a>
+                <a href="#processo" class="hover:text-artisanal-600 transition-colors">Fermentação Natural</a>
+                <a href="#cardapio" class="hover:text-artisanal-600 transition-colors">Cardápio & Pizzas</a>
+                <a href="#galeria" class="hover:text-artisanal-600 transition-colors">Galeria</a>
+                <a href="#contato" class="hover:text-artisanal-600 transition-colors">Contato</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden sm:flex items-center space-x-3">
+                <a href="https://www.ifood.com.br/delivery/vitoria-es/lartisan-sourdough-jardim-camburi/684d3cf7-5dcc-4ff4-9d52-15578852766a" target="_blank" rel="noopener noreferrer" class="bg-red-600 hover:bg-red-700 text-white font-medium text-sm px-5 py-2.5 rounded-full shadow-md transition-all flex items-center space-x-2">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>Pedir no iFood</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-artisanal-900 focus:outline-none p-2">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-artisanal-100 border-b border-artisanal-200 px-6 py-4 space-y-3 font-medium">
+            <a href="#sobre" class="block hover:text-artisanal-600 py-1">A História</a>
+            <a href="#processo" class="block hover:text-artisanal-600 py-1">Fermentação Natural</a>
+            <a href="#cardapio" class="block hover:text-artisanal-600 py-1">Cardápio & Pizzas</a>
+            <a href="#galeria" class="block hover:text-artisanal-600 py-1">Galeria</a>
+            <a href="#contato" class="block hover:text-artisanal-600 py-1">Contato</a>
+            <div class="pt-2">
+                <a href="https://www.ifood.com.br/delivery/vitoria-es/lartisan-sourdough-jardim-camburi/684d3cf7-5dcc-4ff4-9d52-15578852766a" target="_blank" rel="noopener noreferrer" class="block text-center bg-red-600 text-white py-2.5 rounded-full font-medium shadow">
+                    <i class="fa-solid fa-bag-shopping mr-2"></i> Pedir no iFood
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-artisanal-900 text-artisanal-100 py-24 md:py-32 overflow-hidden">
+        <div class="absolute inset-0 opacity-30 mix-blend-overlay bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1400&q=80')"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-artisanal-900 via-artisanal-900/60 to-black/40"></div>
+        
+        <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+            <span class="inline-block py-1 px-4 rounded-full bg-artisanal-800 text-artisanal-300 font-medium text-xs tracking-widest uppercase mb-6 border border-artisanal-700 shadow-sm">
+                Inaugurado no iFood • Sábados: 7h–10h & 18h–21h
+            </span>
+            <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight mb-6 leading-tight">
+                A verdadeira revolução do <span class="italic text-artisanal-300">Sourdough</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-artisanal-200 max-w-2xl mx-auto font-light mb-10 leading-relaxed">
+                Pães artesanais de longa fermentação natural e autênticas pizzas nos estilos Napolitana e Tonda Romana em Vitória. Produção limitada no iFood.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://www.ifood.com.br/delivery/vitoria-es/lartisan-sourdough-jardim-camburi/684d3cf7-5dcc-4ff4-9d52-15578852766a" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-red-600 hover:bg-red-700 text-white font-medium px-8 py-4 rounded-full shadow-xl transition-all flex items-center justify-center space-x-3 text-base">
+                    <i class="fa-solid fa-bag-shopping text-lg"></i>
+                    <span>Fazer Pedido no iFood</span>
+                </a>
+                <a href="#cardapio" class="w-full sm:w-auto bg-artisanal-800 hover:bg-artisanal-700 text-artisanal-100 border border-artisanal-700 font-medium px-8 py-4 rounded-full transition-all flex items-center justify-center space-x-2 text-base">
+                    <span>Ver Cardápio</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Banner -->
+    <section class="bg-artisanal-800 text-artisanal-100 py-6 border-y border-artisanal-700">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div class="flex items-center justify-center space-x-3">
+                <i class="fa-solid fa-seedling text-artisanal-300 text-2xl"></i>
+                <div class="text-left">
+                    <h4 class="font-serif font-bold text-base">Fermentação Natural</h4>
+                    <p class="text-xs text-artisanal-300">Sourdough 100% puro e autêntico</p>
+                </div>
+            </div>
+            <div class="flex items-center justify-center space-x-3">
+                <i class="fa-solid fa-wheat-awn text-artisanal-300 text-2xl"></i>
+                <div class="text-left">
+                    <h4 class="font-serif font-bold text-base">Farinhas Especiais</h4>
+                    <p class="text-xs text-artisanal-300">Ingredientes selecionados e nobres</p>
+                </div>
+            </div>
+            <div class="flex items-center justify-center space-x-3">
+                <i class="fa-solid fa-clock text-artisanal-300 text-2xl"></i>
+                <div class="text-left">
+                    <h4 class="font-serif font-bold text-base">Horários no iFood</h4>
+                    <p class="text-xs text-artisanal-300">Manhã: 7h–10h | Noite: 18h–21h</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- História & Sobre -->
+    <section id="sobre" class="py-20 md:py-28 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-artisanal-600 font-semibold uppercase tracking-widest text-xs block mb-3">Nossa Essência</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-6 text-artisanal-900">
+                    Resgatando a paciência e o sabor da verdadeira panificação.
+                </h2>
+                <p class="text-artisanal-700 leading-relaxed mb-4">
+                    Localizados em Jardim Camburi, Vitória (ES), a <strong>L'Artisan Sourdough</strong> nasceu da paixão pela crosta perfeita, pelo miolo alveolado e, acima de tudo, pelo respeito ao tempo da natureza.
+                </p>
+                <p class="text-artisanal-700 leading-relaxed mb-6">
+                    Aqui, trabalhamos com fermentação natural (Sourdough) e oferecemos deliciosas opções de pizzas nos estilos Napolitana e Tonda Romana.
+                </p>
+                <div class="flex items-center space-x-4 border-l-4 border-artisanal-600 pl-4 py-1">
+                    <p class="italic font-serif text-artisanal-800 text-lg">
+                        "O verdadeiro pão e a verdadeira pizza exigem tempo, dedicação e ingredientes de elite."
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div class="rounded-2xl overflow-hidden shadow-xl bg-artisanal-800 p-8 text-artisanal-100 text-center border border-artisanal-700">
+                    <i class="fa-solid fa-wheat-awn text-4xl text-artisanal-300 mb-4"></i>
+                    <h3 class="font-serif text-2xl font-bold mb-2">Tradição & Fermentação Natural</h3>
+                    <p class="text-sm text-artisanal-300">Pães rústicos e pizzas artesanais autênticas produzidos com amor e rigor em Vitória.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O Processo de Fermentação Natural -->
+    <section id="processo" class="bg-artisanal-200/60 py-20 md:py-28 border-y border-artisanal-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-artisanal-600 font-semibold uppercase tracking-widest text-xs block mb-3">Ciência e Tradição</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-4 text-artisanal-900">O Processo Sourdough</h2>
+                <p class="text-artisanal-700">
+                    Entenda por que a nossa massa é leve, altamente digestível e possui um sabor incomparável.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-artisanal-100 p-8 rounded-2xl shadow-sm border border-artisanal-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-artisanal-800 text-artisanal-100 flex items-center justify-center font-serif font-bold text-xl mb-6 shadow">
+                            01
+                        </div>
+                        <h3 class="font-serif font-bold text-xl mb-3 text-artisanal-900">Levain Natural</h3>
+                        <p class="text-artisanal-700 text-sm leading-relaxed">
+                            Utilizamos apenas leveduras selvagens e bactérias do bem cultivadas diariamente. Sem fermento químico ou aditivos artificiais.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-artisanal-200 text-xs font-semibold text-artisanal-600 uppercase tracking-wider">
+                        Fermentação Lenta
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-artisanal-100 p-8 rounded-2xl shadow-sm border border-artisanal-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-artisanal-800 text-artisanal-100 flex items-center justify-center font-serif font-bold text-xl mb-6 shadow">
+                            02
+                        </div>
+                        <h3 class="font-serif font-bold text-xl mb-3 text-artisanal-900">Farinhas Especiais</h3>
+                        <p class="text-artisanal-700 text-sm leading-relaxed">
+                            Selecionamos rigorosamente farinhas de alta performance que garantem estrutura, aroma marcante e textura impecável.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-artisanal-200 text-xs font-semibold text-artisanal-600 uppercase tracking-wider">
+                        Seleção Rigorosa
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-artisanal-100 p-8 rounded-2xl shadow-sm border border-artisanal-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-artisanal-800 text-artisanal-100 flex items-center justify-center font-serif font-bold text-xl mb-6 shadow">
+                            03
+                        </div>
+                        <h3 class="font-serif font-bold text-xl mb-3 text-artisanal-900">Duas Fornadas no Sábado</h3>
+                        <p class="text-artisanal-700 text-sm leading-relaxed">
+                            Padaria das 7h às 10h, e Pizzaria + Padaria das 18h às 21h no iFood. Produção limitada para garantir o máximo de qualidade.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-artisanal-200 text-xs font-semibold text-artisanal-600 uppercase tracking-wider">
+                        Exclusividade
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cardápio / Pizzas Estilo Napolitana & Tonda Romana -->
+    <section id="cardapio" class="py-20 md:py-28 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-artisanal-600 font-semibold uppercase tracking-widest text-xs block mb-3">Nosso Cardápio</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-4 text-artisanal-900">Pizzas Estilo Napolitana & Tonda Romana</h2>
+            <p class="text-artisanal-700">
+                Disponíveis aos sábados no iFood: Padaria (7h–10h) e Pizzaria + Padaria (18h–21h).
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Item 1 -->
+            <div class="bg-[#f5f2ed] rounded-2xl overflow-hidden shadow-md border border-artisanal-300 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1">
+                <div class="h-48 overflow-hidden relative bg-amber-100">
+                    <img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?auto=format&fit=crop&w=800&q=80" alt="Pizza Margherita" class="w-full h-full object-cover">
+                    <span class="absolute top-3 right-3 bg-artisanal-900 text-artisanal-100 text-xs font-bold px-3 py-1 rounded-full">Serve 2 pessoas</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-serif font-bold text-xl text-artisanal-900">Margherita Clássica</h3>
+                            <span class="font-serif font-bold text-lg text-artisanal-800">R$ 90,00</span>
+                        </div>
+                        <p class="text-artisanal-700 text-sm mb-4 leading-relaxed">
+                            Molho de tomate italiano Pelati, muçarela de búfala, parmesão ralado na hora, azeite extravirgem e manjericão fresco. Estilos Napolitana e Tonda Romana.
+                        </p>
+                    </div>
+                    <div class="text-xs text-artisanal-600 pt-3 border-t border-artisanal-200 italic">
+                        ⚠️ Alérgicos: Contém glúten e lactose (muçarela de búfala).
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="bg-[#f5f2ed] rounded-2xl overflow-hidden shadow-md border border-artisanal-300 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1">
+                <div class="h-48 overflow-hidden relative bg-amber-100">
+                    <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=800&q=80" alt="Pizza Pepperoni" class="w-full h-full object-cover">
+                    <span class="absolute top-3 right-3 bg-artisanal-900 text-artisanal-100 text-xs font-bold px-3 py-1 rounded-full">Serve 2 pessoas</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-serif font-bold text-xl text-artisanal-900">Pepperoni & Muçarela</h3>
+                            <span class="font-serif font-bold text-lg text-artisanal-800">R$ 90,00</span>
+                        </div>
+                        <p class="text-artisanal-700 text-sm mb-4 leading-relaxed">
+                            Molho de tomate italiano Pelati, muçarela, fatias finas de pepperoni especial e orégano aromático em massa de fermentação natural.
+                        </p>
+                    </div>
+                    <div class="text-xs text-artisanal-600 pt-3 border-t border-artisanal-200 italic">
+                        ⚠️ Alérgicos: Contém glúten e derivados de leite.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 (Combo) -->
+            <div class="bg-artisanal-800 text-artisanal-100 rounded-2xl overflow-hidden shadow-xl border border-artisanal-700 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1 lg:col-span-1 md:col-span-2">
+                <div class="h-48 overflow-hidden relative bg-artisanal-900">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80" alt="Combo Pizzas" class="w-full h-full object-cover opacity-80">
+                    <span class="absolute top-3 right-3 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Mais Pedido</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-serif font-bold text-xl text-artisanal-100">Combo 2 Pizzas Artesanais</h3>
+                            <span class="font-serif font-bold text-lg text-artisanal-300">R$ 150,00</span>
+                        </div>
+                        <p class="text-artisanal-300 text-sm mb-4 leading-relaxed">
+                            Escolha 2 pizzas artesanais do nosso cardápio por um preço especial! Massas de longa fermentação natural (sourdough), estilos Napolitana e Tonda Romana.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-artisanal-700">
+                        <a href="https://www.ifood.com.br/delivery/vitoria-es/lartisan-sourdough-jardim-camburi/684d3cf7-5dcc-4ff4-9d52-15578852766a" target="_blank" rel="noopener noreferrer" class="w-full bg-red-600 hover:bg-red-700 text-white font-medium py-2.5 rounded-xl text-center block text-sm transition-all shadow">
+                            Garantir no iFood
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Fotos -->
+    <section id="galeria" class="bg-artisanal-200/60 py-20 md:py-28 border-y border-artisanal-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-artisanal-600 font-semibold uppercase tracking-widest text-xs block mb-3">Nossas Criações</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-4 text-artisanal-900">Galeria de Destaques</h2>
+                <p class="text-artisanal-700">
+                    Um vislumbre das nossas fornadas de pães de fermentação natural e pizzas artesanais.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="aspect-square rounded-2xl overflow-hidden shadow-md bg-artisanal-300 border-2 border-white">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Pães Sourdough" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-2xl overflow-hidden shadow-md bg-artisanal-300 border-2 border-white">
+                    <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&q=80" alt="Pizza Napolitana" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-2xl overflow-hidden shadow-md bg-artisanal-300 border-2 border-white sm:col-span-2 md:col-span-1">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80" alt="Focaccia" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato & Horários -->
+    <section id="contato" class="py-20 md:py-28 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="bg-artisanal-900 text-artisanal-100 rounded-3xl p-8 sm:p-14 shadow-2xl relative overflow-hidden border border-artisanal-700">
+            <span class="text-artisanal-300 font-semibold uppercase tracking-widest text-xs block mb-3">Fornadas de Sábado no iFood</span>
+            <h2 class="font-serif text-3xl sm:text-5xl font-bold mb-6">Pronto para experimentar?</h2>
+            <p class="text-artisanal-200 max-w-xl mx-auto mb-8 text-base leading-relaxed">
+                Funcionamos <strong>aos sábados em dois horários</strong>:<br>
+                🍞 <strong>Padaria:</strong> das 7h às 10h<br>
+                🍕 <strong>Pizzaria & Padaria:</strong> das 18h às 21h<br>
+                Com produção rigorosamente limitada. Peça agora pelo iFood!
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://www.ifood.com.br/delivery/vitoria-es/lartisan-sourdough-jardim-camburi/684d3cf7-5dcc-4ff4-9d52-15578852766a" target="_blank" rel="noopener noreferrer" class="bg-red-600 hover:bg-red-700 text-white font-medium px-8 py-4 rounded-full shadow-lg transition-all flex items-center space-x-3 text-base">
+                    <i class="fa-solid fa-bag-shopping text-lg"></i>
+                    <span>Abrir Loja no iFood</span>
+                </a>
+                <a href="https://wa.me/5527993164787" target="_blank" rel="noopener noreferrer" class="bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-8 py-4 rounded-full shadow-lg transition-all flex items-center space-x-3 text-base">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>Falar no WhatsApp</span>
+                </a>
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-artisanal-700 text-xs text-artisanal-300">
+                <p>📍 Jardim Camburi, Vitória - ES | ⏰ Sábados: 7h–10h e 18h–21h</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-artisanal-900 text-artisanal-300 py-10 border-t border-artisanal-800 text-center text-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-2">
+                <span class="font-serif font-bold text-artisanal-100 text-lg">L'Artisan Sourdough</span>
+            </div>
+            <p class="text-xs text-artisanal-400">
+                &copy; 2026 L'Artisan Sourdough. Todos os direitos reservados.
+            </p>
+            <div class="flex space-x-4">
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="hover:text-artisanal-100 transition-colors">
+                    <i class="fa-brands fa-instagram text-lg"></i>
+                </a>
+                <a href="https://www.ifood.com.br" target="_blank" rel="noopener noreferrer" class="hover:text-artisanal-100 transition-colors">
+                    <i class="fa-solid fa-bag-shopping text-lg"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple Mobile Menu Script -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on click a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

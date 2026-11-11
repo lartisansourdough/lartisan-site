@@ -60,20 +60,21 @@
 </head>
 <body class="bg-artisanal-100 text-artisanal-900 antialiased selection:bg-artisanal-300 selection:text-artisanal-900">
 
-   <!-- Logo / Brand Oficial no Topo -->
+  <!-- Header / Navbar Otimizado -->
+    <header class="sticky top-0 z-50 bg-[#f5f2ed]/95 backdrop-blur-md border-b border-artisanal-200 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col md:flex-row items-center justify-between gap-4">
+            
+            <!-- Logo Oficial em Destaque Espaçado -->
             <a href="#" class="flex items-center space-x-3">
-                <div class="w-12 h-12 rounded-full overflow-hidden bg-artisanal-800 shadow-md flex items-center justify-center border border-artisanal-600">
-                    <img src="https://lh3.googleusercontent.com/d/1nFUvAHzYAUqvN7OEsQPrSwk1T2fDLgXl" alt="L'Artisan Sourdough Logo" class="w-full h-full object-cover">
-                </div>
-                <div>
-                    <span class="font-serif font-bold text-xl tracking-wide text-artisanal-900 block leading-none">L'Artisan Sourdough</span>
-                    <span class="text-xs uppercase tracking-widest text-artisanal-600 font-medium">Vitória • Tradição Italiana</span>
+                <div class="h-16 sm:h-20 w-auto overflow-hidden flex items-center justify-center">
+                    <img src="https://lh3.googleusercontent.com/d/1nFUvAHzYAUqvN7OEsQPrSwk1T2fDLgXl" alt="L'Artisan Sourdough Logo" class="h-full w-auto object-contain">
                 </div>
             </a>
-            <!-- Desktop Nav Links -->
+
+            <!-- Menu de Navegação Centralizado e Espalhado -->
             <nav class="hidden md:flex items-center space-x-8 font-medium text-sm">
                 <a href="#sobre" class="hover:text-artisanal-600 transition-colors">A História</a>
-                <a href="#processo" class="hover:text-artisanal-600 transition-colors">Fermentação Natural</a>
+                <a href="#processo" class="hover:text-artisanal-600 transition-colors">Nossas Fornadas</a>
                 <a href="#cardapio" class="hover:text-artisanal-600 transition-colors">Cardápio & Pizzas</a>
                 <a href="#galeria" class="hover:text-artisanal-600 transition-colors">Galeria</a>
                 <a href="#contato" class="hover:text-artisanal-600 transition-colors">Contato</a>
@@ -88,7 +89,7 @@
             </div>
 
             <!-- Mobile Menu Button -->
-            <button id="menu-btn" class="md:hidden text-artisanal-900 focus:outline-none p-2">
+            <button id="menu-btn" class="md:hidden text-artisanal-900 focus:outline-none p-2 absolute right-4 top-4">
                 <i class="fa-solid fa-bars text-2xl"></i>
             </button>
         </div>
@@ -96,7 +97,7 @@
         <!-- Mobile Menu Dropdown -->
         <div id="mobile-menu" class="hidden md:hidden bg-artisanal-100 border-b border-artisanal-200 px-6 py-4 space-y-3 font-medium">
             <a href="#sobre" class="block hover:text-artisanal-600 py-1">A História</a>
-            <a href="#processo" class="block hover:text-artisanal-600 py-1">Fermentação Natural</a>
+            <a href="#processo" class="block hover:text-artisanal-600 py-1">Nossas Fornadas</a>
             <a href="#cardapio" class="block hover:text-artisanal-600 py-1">Cardápio & Pizzas</a>
             <a href="#galeria" class="block hover:text-artisanal-600 py-1">Galeria</a>
             <a href="#contato" class="block hover:text-artisanal-600 py-1">Contato</a>
@@ -106,9 +107,7 @@
                 </a>
             </div>
         </div>
-    </header>
-
-    <!-- Hero Section -->
+    </header>    <!-- Hero Section -->
     <section class="relative bg-artisanal-900 text-artisanal-100 py-24 md:py-32 overflow-hidden">
         <div class="absolute inset-0 opacity-30 mix-blend-overlay bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1400&q=80')"></div>
         <div class="absolute inset-0 bg-gradient-to-t from-artisanal-900 via-artisanal-900/60 to-black/40"></div>

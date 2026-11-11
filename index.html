@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'Artisan Sourdough | Tradição Italiana em Vitória</title>
-<link rel="icon" type="image/png" href="favicon.png"> 
+    <title>L'Artisan Sourdough | Pizzas & Pães de Fermentação Natural</title>
+    <link rel="icon" type="image/png" href="favicon.png"> 
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18563313920"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-18563313920');
+    </script>
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -67,7 +78,7 @@
             <nav class="hidden md:flex items-center space-x-8 font-medium text-sm">
                 <a href="#sobre" class="hover:text-artisanal-600 transition-colors">A História</a>
                 <a href="#processo" class="hover:text-artisanal-600 transition-colors">Fermentação Natural</a>
-                <a href="#cardapio" class="hover:text-artisanal-600 transition-colors">Cardápio & s</a>
+                <a href="#cardapio" class="hover:text-artisanal-600 transition-colors">Cardápio & Pizzas</a>
                 <a href="#galeria" class="hover:text-artisanal-600 transition-colors">Galeria</a>
                 <a href="#contato" class="hover:text-artisanal-600 transition-colors">Contato</a>
             </nav>
@@ -114,7 +125,7 @@
                 A verdadeira revolução do <span class="italic text-artisanal-300">Sourdough</span>
             </h1>
             <p class="text-lg sm:text-xl text-artisanal-200 max-w-2xl mx-auto font-light mb-10 leading-relaxed">
-                Pães artesanais de longa fermentação natural e autênticas pizzas nos estilos Napolitana e Tonda Romana em Vitória. Produção limitada no iFood.
+                Pães de longa fermentação natural e autênticas pizzas nos estilos Napolitana e Tonda Romana em Vitória. Produção limitada no iFood.
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a href="https://www.ifood.com.br/delivery/vitoria-es/lartisan-sourdough-jardim-camburi/684d3cf7-5dcc-4ff4-9d52-15578852766a" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-red-600 hover:bg-red-700 text-white font-medium px-8 py-4 rounded-full shadow-xl transition-all flex items-center justify-center space-x-3 text-base">
@@ -167,7 +178,7 @@
                     Localizados em Jardim Camburi, Vitória (ES), a <strong>L'Artisan Sourdough</strong> nasceu da paixão pela crosta perfeita, pelo miolo alveolado e, acima de tudo, pelo respeito ao tempo da natureza.
                 </p>
                 <p class="text-artisanal-700 leading-relaxed mb-6">
-                    Aqui, trabalhamos com fermentação natural (Sourdough) e oferecemos deliciosas opções de pizzas nos estilos Napolitana e Tonda Romana.
+                    Aqui, trabalhamos com fermentação natural (Sourdough) e oferecemos deliciosas opções de pães e pizzas nos estilos Napolitana e Tonda Romana.
                 </p>
                 <div class="flex items-center space-x-4 border-l-4 border-artisanal-600 pl-4 py-1">
                     <p class="italic font-serif text-artisanal-800 text-lg">
@@ -248,21 +259,64 @@
         </div>
     </section>
 
-    <!-- Cardápio / Pizzas Estilo Napolitana & Tonda Romana -->
+    <!-- Cardápio / Preços Padronizados -->
     <section id="cardapio" class="py-20 md:py-28 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16">
             <span class="text-artisanal-600 font-semibold uppercase tracking-widest text-xs block mb-3">Nosso Cardápio</span>
-            <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-4 text-artisanal-900">Pizzas Estilo Napolitana & Tonda Romana</h2>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-4 text-artisanal-900">Pães Italianos, Baguetes & Pizzas</h2>
             <p class="text-artisanal-700">
-                Disponíveis aos sábados no iFood: Padaria (7h–10h) e Pizzaria + Padaria (18h–21h).
+                Longa fermentação de 72 horas. Disponíveis no iFood conforme os horários de fornada.
             </p>
         </div>
 
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-16">
+            <!-- PÃOS ITALIANOS -->
+            <div class="bg-[#f5f2ed] p-8 rounded-2xl shadow-md border border-artisanal-300">
+                <h3 class="font-serif text-2xl font-bold tracking-wide text-artisanal-900 mb-1 text-center md:text-left">PÃOS ITALIANOS</h3>
+                <p class="text-xs uppercase tracking-widest text-artisanal-600 font-semibold mb-6 text-center md:text-left">LONGA FERMENTAÇÃO 72 HORAS</p>
+                <ul class="space-y-4 text-artisanal-800 font-medium text-base">
+                    <li class="flex justify-between items-center border-b border-artisanal-300 pb-3">
+                        <span>CLÁSSICO PURO</span>
+                        <span class="font-serif font-bold text-lg text-artisanal-900">R$ 50</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-artisanal-300 pb-3">
+                        <span>COM AZEITE</span>
+                        <span class="font-serif font-bold text-lg text-artisanal-900">R$ 60</span>
+                    </li>
+                    <li class="flex justify-between items-center pb-1">
+                        <span>COM PROVOLONE (Queijo Defumado)</span>
+                        <span class="font-serif font-bold text-lg text-artisanal-900">R$ 70</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- BAGUETES FRANCESAS -->
+            <div class="bg-[#f5f2ed] p-8 rounded-2xl shadow-md border border-artisanal-300">
+                <h3 class="font-serif text-2xl font-bold tracking-wide text-artisanal-900 mb-1 text-center md:text-left">BAGUETES FRANCESAS</h3>
+                <p class="text-xs uppercase tracking-widest text-artisanal-600 font-semibold mb-6 text-center md:text-left">LONGA FERMENTAÇÃO 72 HORAS</p>
+                <ul class="space-y-4 text-artisanal-800 font-medium text-base">
+                    <li class="flex justify-between items-center border-b border-artisanal-300 pb-3">
+                        <span>1 unidade</span>
+                        <span class="font-serif font-bold text-lg text-artisanal-900">R$ 30</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-artisanal-300 pb-3">
+                        <span>2 unidades <span class="text-xs font-sans text-artisanal-600 ml-1">Leve mais por menos</span></span>
+                        <span class="font-serif font-bold text-lg text-artisanal-900">R$ 50</span>
+                    </li>
+                    <li class="flex justify-between items-center pb-1">
+                        <span>3 unidades <span class="text-xs font-sans text-red-600 font-bold ml-1">Super Oferta!</span></span>
+                        <span class="font-serif font-bold text-lg text-artisanal-900">R$ 60</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Pizzas Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Item 1 -->
+            <!-- Item 1 (Margherita) -->
             <div class="bg-[#f5f2ed] rounded-2xl overflow-hidden shadow-md border border-artisanal-300 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1">
                 <div class="h-48 overflow-hidden relative bg-amber-100">
-                    <img src="https://res.cloudinary.com/ly4sjcpp/image/upload/f_auto,q_auto/79902" alt="Pizza Margherita" class="w-full h-full object-cover">
+                    <img src="https://i.ibb.co/3W6qWqC/margherita.jpg" alt="Pizza Margherita" class="w-full h-full object-cover">
                     <span class="absolute top-3 right-3 bg-artisanal-900 text-artisanal-100 text-xs font-bold px-3 py-1 rounded-full">Serve 2 pessoas</span>
                 </div>
                 <div class="p-6 flex-1 flex flex-col justify-between">
@@ -281,10 +335,10 @@
                 </div>
             </div>
 
-            <!-- Item 2 -->
+            <!-- Item 2 (Pepperoni) -->
             <div class="bg-[#f5f2ed] rounded-2xl overflow-hidden shadow-md border border-artisanal-300 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1">
                 <div class="h-48 overflow-hidden relative bg-amber-100">
-                    <img src="https://lh3.googleusercontent.com/d/1YRXzW5fwHnLH8kxiTATdFAG9VEDpuiGU" alt="Pizza Pepperoni" class="w-full h-full object-cover">
+                    <img src="https://i.ibb.co/3yn5V7j/pepperoni.jpg" alt="Pizza Pepperoni" class="w-full h-full object-cover">
                     <span class="absolute top-3 right-3 bg-artisanal-900 text-artisanal-100 text-xs font-bold px-3 py-1 rounded-full">Serve 2 pessoas</span>
                 </div>
                 <div class="p-6 flex-1 flex flex-col justify-between">
@@ -306,7 +360,7 @@
             <!-- Item 3 (Combo) -->
             <div class="bg-artisanal-800 text-artisanal-100 rounded-2xl overflow-hidden shadow-xl border border-artisanal-700 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1 lg:col-span-1 md:col-span-2">
                 <div class="h-48 overflow-hidden relative bg-artisanal-900">
-                    <img src="https://lh3.googleusercontent.com/d/1W6Y3JV9F1o-6BikJQBgclfAtBnCscBEx" alt="Combo Pizzas" class="w-full h-full object-cover opacity-80">
+                    <img src="https://lh3.googleusercontent.com/d/14OQeQyRKn-K0mne0YjPnMY4m4TDVkYrq" alt="Combo Pizzas" class="w-full h-full object-cover">
                     <span class="absolute top-3 right-3 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Mais Pedido</span>
                 </div>
                 <div class="p-6 flex-1 flex flex-col justify-between">
@@ -316,7 +370,7 @@
                             <span class="font-serif font-bold text-lg text-artisanal-300">R$ 150,00</span>
                         </div>
                         <p class="text-artisanal-300 text-sm mb-4 leading-relaxed">
-                            Escolha 2 pizzas artesanais do nosso cardápio por um preço especial! Massas de longa fermentação natural (sourdough), estilos Napolitana e Tonda Romana.
+                            Escolha 2 pizzas artesanais do nosso cardápio por um preço especial! Massas de longa fermentação natural (sourdough).
                         </p>
                     </div>
                     <div class="pt-4 border-t border-artisanal-700">
@@ -329,17 +383,41 @@
         </div>
     </section>
 
+    <!-- Galeria de Fotos -->
+    <section id="galeria" class="bg-artisanal-200/60 py-20 md:py-28 border-y border-artisanal-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-artisanal-600 font-semibold uppercase tracking-widest text-xs block mb-3">Nossas Criações</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-4 text-artisanal-900">Galeria de Destaques</h2>
+                <p class="text-artisanal-700">
+                    Um vislumbre das nossas fornadas de pães de fermentação natural e pizzas artesanais.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="aspect-square rounded-2xl overflow-hidden shadow-md bg-artisanal-300 border-2 border-white">
+                    <img src="https://lh3.googleusercontent.com/d/1bH6AfIzlifEX3jSdroABpI9-SXZjcJ_3" alt="Pão Italiano" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-2xl overflow-hidden shadow-md bg-artisanal-300 border-2 border-white">
+                    <img src="https://lh3.googleusercontent.com/d/1Td2PU-tWj1UJgFPXD8DtjfwQ-LvQ6dUQ" alt="Pizza Napolitana" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-2xl overflow-hidden shadow-md bg-artisanal-300 border-2 border-white sm:col-span-2 md:col-span-1">
+                    <img src="https://lh3.googleusercontent.com/d/16ntEQ2H72130evwQov8SSDge2BLIzGG1" alt="Focaccia" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Contato & Horários -->
     <section id="contato" class="py-20 md:py-28 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div class="bg-artisanal-900 text-artisanal-100 rounded-3xl p-8 sm:p-14 shadow-2xl relative overflow-hidden border border-artisanal-700">
-            <span class="text-artisanal-300 font-semibold uppercase tracking-widest text-xs block mb-3">Horários no iFood</span>
+            <span class="text-artisanal-300 font-semibold uppercase tracking-widest text-xs block mb-3">Fornadas de Sábado no iFood</span>
             <h2 class="font-serif text-3xl sm:text-5xl font-bold mb-6">Pronto para experimentar?</h2>
             <p class="text-artisanal-200 max-w-xl mx-auto mb-8 text-base leading-relaxed">
-                Funcionamos <strong>Pizzaria - Sexta de 22 às 23 / aos sábados em dois horários</strong>:<br>
+                Funcionamos <strong>Sextas de 22 - 23h / aos sábados em dois horários</strong>:<br>
                 🍞 <strong>Padaria:</strong> das 7h às 10h<br>
-                🍕 <strong>Pizzaria & Padaria:</strong> das 18h às 21h<br>
-                Domingo de 18 às 20 / Com produção rigorosamente limitada. Peça agora pelo iFood!
+                🍕 <strong>Pizzaria & Padaria:</strong> das 18h às 23h / domingo 18-21h<br>
+                Com produção rigorosamente limitada. Peça agora pelo iFood ou encomende!
             </p>
 
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -347,14 +425,14 @@
                     <i class="fa-solid fa-bag-shopping text-lg"></i>
                     <span>Abrir Loja no iFood</span>
                 </a>
-                <a href="https://wa.me/5527993164787" target="_blank" rel="noopener noreferrer" class="bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-8 py-4 rounded-full shadow-lg transition-all flex items-center space-x-3 text-base">
+                <a href="https://wa.me/5527996359715" target="_blank" rel="noopener noreferrer" class="bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-8 py-4 rounded-full shadow-lg transition-all flex items-center space-x-3 text-base">
                     <i class="fa-brands fa-whatsapp text-xl"></i>
-                    <span>Falar no WhatsApp</span>
+                    <span>Encomendas (27) 99635-9715</span>
                 </a>
             </div>
 
             <div class="mt-12 pt-8 border-t border-artisanal-700 text-xs text-artisanal-300">
-                <p>📍 Jardim Camburi, Vitória - ES | ⏰ Sábados: 7h–10h e 18h–21h</p>
+                <p>📍 Jardim Camburi, Vitória - ES | ⏰ Sexta: 22-23 / Sábados: 7h–10h e 18h–23h / Domingo - 18-21h</p>
             </div>
         </div>
     </section>
